@@ -88,7 +88,9 @@ namespace SkiaSharpOpenGLBenchmark
             const int viewShowWidthPx = 30;
             const int viewShowHeightPx = 30;
             // 创建绘制参数和矩形对象
-            var paint = new SKPaint { Color = SKColors.LightBlue };
+            using var paint = new SKPaint();
+            paint.Color = SKColors.LightBlue;
+            paint.IsAntialias = false;
             // 开始绘制
             canvas.Clear(SKColors.White); // 清空画布
 

@@ -91,9 +91,10 @@ namespace SkiaSharpOpenGLBenchmark
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(208, 15);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(203, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
@@ -112,7 +113,7 @@ namespace SkiaSharpOpenGLBenchmark
             this.Name = "Form1";
             this.Text = "SkiaSharp with OpenGL Benchmark";
             this.ResumeLayout(false);
-
+            this.PerformLayout();
         }
 
         #endregion
